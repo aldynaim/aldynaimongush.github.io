@@ -25,15 +25,15 @@ class Tile
             ctx.linewidth = 5
             ctx.fillRect(this.col * tileWidth, this.row * tileHeight, tileWidth, tileHeight)
             ctx.strokeRect(this.col * tileWidth, this.row * tileHeight, tileWidth, tileHeight)
-            ctx.font = `${tileWidth * 0.6}px.Arial`
+            ctx.font = `${tileWidth * 0.6}px Arial`
             ctx.fillStyle = "blue"
             ctx.textAlign = 'center'
             ctx.textBaseline = "middle"
             ctx.fillText(this.val, this.col * tileWidth + tileWidth / 2, this.row * tileHeight + tileHeight / 2)
-
         }
     }
 }
+
 
 export class GameView
 {

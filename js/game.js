@@ -12,7 +12,7 @@ function findZero(state)
 
 export function actions(state)
 {
-    const [i,j] = findZero(state)
+    const [i, j] = findZero(state)
     if(i === 0 && j === 0)
         return [up, left]
     else if(i === 0 && j === 2)
@@ -28,7 +28,7 @@ export function actions(state)
     else if(j === 0)
         return [up, down, left]
     else if(j === 2)
-        return [up,down, right]
+        return [up, down, right]
     else
         return [up, down, left, right]
 }
@@ -75,3 +75,4 @@ export function move(state, i, j)
     else
         return state
 }
+
